@@ -56,18 +56,21 @@ ul{
     line-height: 78px;
     padding: 10px 25px;
     color: rgb(255, 255, 255);
+   
+    
 }
 .top-bar .bor{
     border: solid #50bcc3 2px; position: relative;
 }
 .header ul li a:hover{
     color: #50bcc3;
+    
 } 
 /* hểt menu chính */
 /* đến phần menu con */
 .menu-con{
     position: absolute;
-    left: 0; top: 44px;
+    left: 0; top: 46px;
     visibility: hidden;
     opacity: 0;
     transition: 0.25s;
@@ -81,6 +84,7 @@ ul{
 }
 .top-bar .menu-con li a{
     line-height: 50px;color: #252525
+    
 }
 .top-bar ul :hover .menu-con{
     visibility: visible; transition: 0.75s; opacity: 1;
@@ -263,4 +267,66 @@ button.kyten:hover{
 }
 .item1{
     background-color: rgb(6, 0, 37); width: 100px; height: 100px; display: flex; align-items: center; justify-content: center;
+}
+/*phần info*/
+.info{
+    width: 40%;
+    height: 300px;
+    margin:0 auto ;
+    padding: 100px 0;
+    position: relative;
+   
+}
+.info-con{
+    position: absolute;
+    top: 200px;
+    right: 86px;
+}
+/* heets inffo */
+.story{
+    width: 100%;
+    margin: 100px 0;
+}
+.ourstory{
+    width: 50%;
+    float: left;
+    background-color: #17143e;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    flex-wrap: wrap;
+}
+
+.content-story{
+    width: 50%;
+    height: 600px;
+    float: left;
+    background-color: #f7666d;
+}
+.daybien{
+    position: relative;
+
+}
+.daybien::before{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(
+    180deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
+    text-align: center;
+}
+
+
+.contacsimg{
+    width: 100%;
+    height: 1000px;
+    background-color: aqua;
+    border: red solid;
 }
